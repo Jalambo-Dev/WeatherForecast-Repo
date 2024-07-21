@@ -11,7 +11,6 @@ Permissions
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    <!DOCTYPE html>
 ## Here You are all screens of app
 ![city](https://github.com/user-attachments/assets/be404277-a431-43ad-a9c7-4a338abe272b)
 ![launch](https://github.com/user-attachments/assets/330c825a-710e-4755-849e-f3b7c09e7594)
