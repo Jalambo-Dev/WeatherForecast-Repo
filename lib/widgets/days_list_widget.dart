@@ -3,8 +3,8 @@ import 'package:lottie/lottie.dart';
 import 'package:weather_forecast_app_flutter/models/weather_model.dart';
 import 'package:weather_forecast_app_flutter/services/weather_service.dart';
 
-class DaiesListWidget extends StatelessWidget {
-  const DaiesListWidget({
+class DaysListWidget extends StatelessWidget {
+  const DaysListWidget({
     super.key,
     required this.currentCityWeather,
   });
@@ -26,7 +26,7 @@ class DaiesListWidget extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                  '3 - Daies Forecast',
+                  '3 - Days Forecast',
                   style: TextStyle(fontSize: 24),
                 ),
               ],
@@ -50,18 +50,15 @@ class DaiesListWidget extends StatelessWidget {
                   WeatherService().getWeatherAnimation(
                       (currentCityWeather!.dailyConditons[index])),
                 ),
-                title: Row(
+                title: Text(
+                  '${currentCityWeather?.dailyConditons[index]}',
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
+                  textAlign: TextAlign.center,
+                ),
+                subtitle: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // conditon text
-                    Text(
-                      '${currentCityWeather?.dailyConditons[index]}',
-                    ),
-
-                    const SizedBox(
-                      width: 20,
-                    ),
-
                     // max tempreture
                     const Icon(Icons.keyboard_arrow_up_sharp),
                     Text(

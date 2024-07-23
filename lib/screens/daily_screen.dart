@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_forecast_app_flutter/cubits/get_current_weather_cubit/current_city_weather_cubit.dart';
 import 'package:weather_forecast_app_flutter/models/weather_model.dart';
-import 'package:weather_forecast_app_flutter/widgets/daies_list_widget.dart';
+import 'package:weather_forecast_app_flutter/widgets/days_list_widget.dart';
 import 'package:weather_forecast_app_flutter/widgets/drawer_widget.dart';
 
 class DaiesScreen extends StatefulWidget {
@@ -36,7 +36,7 @@ class _DaiesScreenState extends State<DaiesScreen> {
         builder: (context, state) {
           if (state is CurrentCityWeatherLoaded) {
             currentCityWeather = state.weatherModel;
-            return DaiesListWidget(currentCityWeather: currentCityWeather);
+            return DaysListWidget(currentCityWeather: currentCityWeather);
           } else {
             return const Center(child: CircularProgressIndicator());
           }

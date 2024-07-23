@@ -50,10 +50,15 @@ class HoursListWidget extends StatelessWidget {
                     WeatherService().getWeatherAnimation(
                         (currentCityWeather!.hourlyConditons[index])),
                   ),
-                  title: Center(
-                    child: Text(
-                      "${currentCityWeather?.hourlyTemperatures[index]}°    ${currentCityWeather?.hourlyConditons[index]}",
-                    ),
+                  title: Text(
+                    "${currentCityWeather?.hourlyConditons[index]}",
+                    textAlign: TextAlign.center,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  subtitle: Text(
+                    "${currentCityWeather?.hourlyTemperatures[index]}°",
+                    textAlign: TextAlign.center,
                   ),
                   trailing: Text(index < 10 ? "0$index:00" : "$index:00"),
                 );
