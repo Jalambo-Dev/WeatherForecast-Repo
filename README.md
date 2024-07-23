@@ -12,11 +12,19 @@ Permissions
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 ## Here You are all screens of app
-![city](https://github.com/user-attachments/assets/be404277-a431-43ad-a9c7-4a338abe272b)
+### Launch Screen
 ![launch](https://github.com/user-attachments/assets/330c825a-710e-4755-849e-f3b7c09e7594)
+### Loading Screen
 ![laoding](https://github.com/user-attachments/assets/fe2943d1-4aeb-4b46-b096-bea4a9cc803a)
+### Home Screen
 ![home](https://github.com/user-attachments/assets/ff947c89-aacf-4706-a848-01896601703c)
+### Drawer Screen
 ![drawer](https://github.com/user-attachments/assets/2c0a7994-7649-4239-8262-5dea58f4d8e0)
+### City Screen
+![city](https://github.com/user-attachments/assets/be404277-a431-43ad-a9c7-4a338abe272b)
+### Hourly Screen
 ![hourly](https://github.com/user-attachments/assets/4ac7f1e8-a1e6-47bd-8ede-aeea61c0ebd0)
+### Daily Screen
 ![daily](https://github.com/user-attachments/assets/3dcdeb6b-9d07-42db-a7df-29a1b7489e73)
+### Cities Screen
 ![cities](https://github.com/user-attachments/assets/d2f36ee4-51dc-40f8-9f0e-9c7fbf2f171c)
